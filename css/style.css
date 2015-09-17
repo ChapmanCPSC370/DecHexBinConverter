@@ -1,0 +1,73 @@
+html {
+	height: 100%;
+	width: 100%;
+	background: #00FF99;
+	font-family: "Lucida Console", monospace;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 10px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+footer a {
+	padding-bottom: 20px;
+}
+
+.nav-bar {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	font-size: 30px;
+	color: #000000;
+	padding: 20px;
+	background: #FFCC00;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px #C0C0C0;
+}
+
+.container {
+	text-align: center;
+	padding-top: 60px;
+}
+
+.container h1 {
+	font-size: 65px;
+}
+
+.container button {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.input {
+	margin-bottom: 100px;
+}
+
+.hex {
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.bin {
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.dec {
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 100px;
+}

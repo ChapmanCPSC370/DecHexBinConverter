@@ -20,9 +20,9 @@ function RunConverter()
 {
 	var decimal_number, input1;
 
-	input1 = document.getElementById("form1"); //sets the input from the text box = to a variable
+	input1 = document.getElementById("form1");
 
-	decimal_number = input1.elements["convertButton"].value;
+	decimal_number = input1.elements["convertButton"].value; //sets the input from the text box = to a variable
 
 		if (decimal_number == "" || isNaN(decimal_number)) //validates the input
 		{
@@ -39,15 +39,19 @@ function RunConverter()
 			*/
 			while(decimal_number != 0)
 			{
-				if(decimal_number % 2 == 0)
+				var helper = decimal_number;
+
+				if(helper % 2 == 0)
 				{
 					binary_Value.push(0);
 					binary_Value++; //increase the size of the array
+					decimal_number = helper/2;
 				}
 				else
 				{
 					binary_Value.push(1);
 					binary_Value++; //increase the size of the array
+					decimal_number = (helper/2) - .5;
 				}
 			}
 		

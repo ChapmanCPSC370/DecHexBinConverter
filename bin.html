@@ -4,11 +4,14 @@
 <head>
 	<title>Binary Converter</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script src="js/convert.js"></script>
 </head>
 
 <body>
 	<div class="nav-bar">
-		<a href="index.html">Apex</a>
+		<a href="index.html">Home</a>
 		<a href="dec.html">Decimal Converter</a>
 		<a href="hex.html">Hexadecimal Converter</a>
 		<a href="bin.html">Binary Converter</a>
@@ -17,18 +20,18 @@
 	<div class="container">
 		<div class="input">
 			<p>Enter binary value below</p>
-			<textarea rows="4" cols="50"></textarea>
-			<button id="submit-button">Convert</button>
+			<textarea id="userInput" rows="4" cols="50"></textarea>
+			<button id="submit-button" onclick="convertBin()">Convert</button>
 		</div>
 
 		<div class="dec">
 			<p>Decimal Value</p>
-			<textarea disabled rows="4" cols="50">----</textarea>
+			<textarea disabled id="decBox" rows="4" cols="50">----</textarea>
 		</div>
 
 		<div class="hex">
 			<p id="bin">Hexadecimal Value</p>
-			<textarea disabled rows="4" cols="50">----</textarea>
+			<textarea disabled id="hexBox" rows="4" cols="50">----</textarea>
 		</div>
 	</div>
 </body>

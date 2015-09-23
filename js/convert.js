@@ -74,7 +74,6 @@ function convertDecimal()
 
 	// grab and validate user input
 	var userInput = document.getElementById("userInput").value;
-	alert(userInput);
 	if(checkDecInput(userInput))
 	{
 		userInput = parseInt(userInput);
